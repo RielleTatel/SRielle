@@ -31,7 +31,7 @@ export function ContactSection() {
               <CardContent className="p-8 text-center">
                 <Mail className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h4 className="font-semibold text-foreground mb-2">Email</h4>
-                <p className="text-muted-foreground">gabrielle@srielle.com</p>
+                <p className="text-muted-foreground"> tatzkiebuy@gmail </p>
               </CardContent>
             </Card>
 
@@ -39,7 +39,7 @@ export function ContactSection() {
               <CardContent className="p-8 text-center">
                 <Phone className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h4 className="font-semibold text-foreground mb-2">Phone</h4>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground"> 0966 782 5566 </p>
               </CardContent>
             </Card>
 
@@ -47,7 +47,7 @@ export function ContactSection() {
               <CardContent className="p-8 text-center">
                 <MapPin className="h-8 w-8 text-accent mx-auto mb-4" />
                 <h4 className="font-semibold text-foreground mb-2">Location</h4>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground"> Philippines </p>
               </CardContent>
             </Card>
           </div>

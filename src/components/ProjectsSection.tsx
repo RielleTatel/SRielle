@@ -6,19 +6,19 @@ export function ProjectsSection() {
       id: 1,
       title: "Barcode Inventory Management System",
       description: "Real-time inventory tracking system with barcode scanning, automated reordering, and comprehensive analytics dashboard for retail operations.",
-      image: "/placeholder-project.jpg"
+      image: "/Barcode.jpg"
     },
     {
       id: 2,
       title: "Mitchlao's Online Ordering Platform",
       description: "Full-stack e-commerce platform with menu management, real-time order tracking, payment integration, and customer loyalty features.",
-      image: "/placeholder-project.jpg"
+      image: "/MitchLao.webp"
     },
     {
       id: 3,
       title: "University Healthcare System",
       description: "Comprehensive healthcare management system for universities with appointment scheduling, medical records, and telehealth capabilities.",
-      image: "/placeholder-project.jpg"
+      image: "/AdZU Infirmary.jpg"
     }
   ];
 
@@ -50,7 +50,13 @@ export function ProjectsSection() {
                 style={{ animationDelay: `${(index + 1) * 200}ms` }}
               >
                 <CardContent className="p-0">
-                  <div className="bg-secondary rounded-t-xl h-48 mb-6 group-hover:bg-teal-light/20 transition-colors duration-300"></div>
+                  <div className="rounded-t-xl h-48 mb-6 overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
                   <div className="p-6">
                     <h5 className="text-xl font-bold text-accent mb-3 group-hover:text-teal-dark transition-colors">{project.title}</h5>
                     <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground transition-colors">
@@ -81,7 +87,7 @@ export function ProjectsSection() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-1000 hover:scale-105 hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
-                <div className="text-5xl font-bold text-accent mb-2 animate-pulse">15+</div>
+                <div className="text-5xl font-bold text-accent mb-2 animate-pulse">4+</div>
                 <h6 className="text-xl font-bold text-accent mb-3">Projects Delivered</h6>
                 <p className="text-muted-foreground text-sm">
                   Successful full-stack applications serving thousands of users across various industries.
@@ -91,7 +97,7 @@ export function ProjectsSection() {
             
             <Card className="border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-1200 hover:scale-105 hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
-                <div className="text-5xl font-bold text-accent mb-2 animate-pulse" style={{animationDelay: '200ms'}}>5+</div>
+                <div className="text-5xl font-bold text-accent mb-2 animate-pulse" style={{animationDelay: '200ms'}}>2</div>
                 <h6 className="text-xl font-bold text-accent mb-3">Years Experience</h6>
                 <p className="text-muted-foreground text-sm">
                   Proven track record in full-stack development, team leadership, and technical innovation.
@@ -101,7 +107,7 @@ export function ProjectsSection() {
             
             <Card className="border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-1400 hover:scale-105 hover:shadow-lg transition-all">
               <CardContent className="p-8 text-center">
-                <div className="text-5xl font-bold text-accent mb-2 animate-pulse" style={{animationDelay: '400ms'}}>8+</div>
+                <div className="text-5xl font-bold text-accent mb-2 animate-pulse" style={{animationDelay: '400ms'}}>5+</div>
                 <h6 className="text-xl font-bold text-accent mb-3">Certifications</h6>
                 <p className="text-muted-foreground text-sm">
                   Professional certifications in cloud computing, security, and modern development practices.
