@@ -4,21 +4,24 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "Barcode Inventory Management System",
-      description: "Real-time inventory tracking system with barcode scanning, automated reordering, and comprehensive analytics dashboard for retail operations.",
-      image: "/Barcode.jpg"
+      title: "Rotaract Zamboanga City West Website",
+      description: "Modern responsive website for Rotaract Club with event management, member portal, community outreach tracking, and interactive features for service projects.",
+      image: "/Rotaract.png",  
+      link: "https://github.com/JHNLWHD/rotaract-zamboanga-city-west.git", 
     },
     {
       id: 2,
       title: "Mitchlao's Online Ordering Platform",
       description: "Full-stack e-commerce platform with menu management, real-time order tracking, payment integration, and customer loyalty features.",
-      image: "/MitchLao.webp"
+      image: "/MitchLao.webp",
+      link: "https://github.com/RielleTatel/MitchPastries.git"
     },
     {
       id: 3,
       title: "University Healthcare System",
       description: "Comprehensive healthcare management system for universities with appointment scheduling, medical records, and telehealth capabilities.",
-      image: "/AdZU Infirmary.jpg"
+      image: "/AdZU Infirmary.jpg", 
+      link: "https://github.com/RielleTatel/Ateneo-de-Zamboanga-University-Health-Management-System-UHMS-.git"
     }
   ];
 
@@ -94,32 +97,45 @@ export function ProjectsSection() {
             </h4>
           </div>
 
-          {/* Projects grid */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card 
-                key={project.id} 
-                className="group hover:shadow-card hover:scale-105 hover:-translate-y-2 transition-all duration-500 border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700"
-                style={{ animationDelay: `${(index + 1) * 200}ms` }}
-              >
-                <CardContent className="p-0">
-                  <div className="rounded-t-xl h-48 mb-6 overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h5 className="text-xl font-bold text-accent mb-3 group-hover:text-teal-dark transition-colors">{project.title}</h5>
-                    <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground transition-colors">
-                      {project.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+{/* Projects grid */} 
+<div className="grid md:grid-cols-3 gap-8">
+  {projects.map((project, index) => (
+    <Card 
+      key={project.id} 
+      className="group hover:shadow-card hover:scale-105 hover:-translate-y-2 transition-all duration-500 border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700"
+      style={{ animationDelay: `${(index + 1) * 200}ms` }}
+    >
+      <CardContent className="p-0">
+        <div className="rounded-t-xl h-48 mb-6 overflow-hidden">
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+        </div>
+        <div className="p-6 space-y-4">
+          <h5 className="text-xl font-bold text-accent mb-3 group-hover:text-teal-dark transition-colors">
+            {project.title}
+          </h5>
+          <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground transition-colors">
+            {project.description}
+          </p>
+
+          {/* View GitHub button */}
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 rounded-lg text-sm font-medium shadow-md hover:opacity-90 hover:scale-105 transition-all"
+          >
+            View GitHub
+          </a>
+        </div>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
 
           {/* Capabilities summary */}
           <div className="bg-card rounded-3xl p-12 shadow-card border border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-700 hover:scale-105 transition-transform">

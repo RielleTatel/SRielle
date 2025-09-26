@@ -26,17 +26,7 @@ export function ContactSection() {
             right: "8%"
           }}
         />
-        
-        {/* Container 3 */}
-        <div
-          className="absolute w-[200px] h-[180px] rounded-full bg-white blur-[28px] shrink-0"
-          style={{ 
-            transform: "rotate(-38.1deg)",
-            bottom: "25%",
-            left: "12%"
-          }}
-        />
-        
+      
 
       </div>
 
