@@ -1,21 +1,20 @@
-import { Code, Database, Cloud, Smartphone, Globe, Shield, Zap, Layers } from "lucide-react";
+import { Code, Database, Smartphone, Globe, Shield, Zap } from "lucide-react";
 
 export function TechStackSection() {
   const techItems = [
-    { title: "Frontend Development", icon: Code, description: "React, Vue.js, Angular & modern frameworks" },
+    { title: "Frontend Development", icon: Code, description: "React & modern frameworks" },
     { title: "Backend Architecture", icon: Database, description: "Node.js, Python, API design & microservices" },
-    { title: "Cloud Infrastructure", icon: Cloud, description: "AWS, Docker, Kubernetes & DevOps" },
     { title: "Mobile Development", icon: Smartphone, description: "React Native & cross-platform solutions" },
     { title: "Full-Stack Solutions", icon: Globe, description: "End-to-end application development" },
     { title: "Security & Performance", icon: Shield, description: "Authentication, optimization & best practices" },
     { title: "Real-time Systems", icon: Zap, description: "WebSockets, live updates & data streaming" },
-    { title: "System Integration", icon: Layers, description: "Third-party APIs & enterprise solutions" }
   ];
 
 
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-20">
-      <div className="max-w-6xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center px-6 py-20 relative overflow-hidden">
+
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section header */}
         <div className="flex items-center justify-between mb-16">
           <div className="h-px bg-border flex-1"></div>

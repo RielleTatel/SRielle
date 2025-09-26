@@ -4,8 +4,43 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function ContactSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center px-6 py-20 relative overflow-hidden">
+      {/* Aesthetic blurred containers */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Container 1 */}
+        <div
+          className="absolute w-[320px] h-[280px] rounded-full bg-white blur-[38px] shrink-0"
+          style={{ 
+            transform: "rotate(-14.3deg)",
+            top: "10%",
+            left: "5%"
+          }}
+        />
+        
+        {/* Container 2 */}
+        <div
+          className="absolute w-[260px] h-[230px] rounded-full bg-white blur-[32px] shrink-0"
+          style={{ 
+            transform: "rotate(26.7deg)",
+            top: "20%",
+            right: "8%"
+          }}
+        />
+        
+        {/* Container 3 */}
+        <div
+          className="absolute w-[200px] h-[180px] rounded-full bg-white blur-[28px] shrink-0"
+          style={{ 
+            transform: "rotate(-38.1deg)",
+            bottom: "25%",
+            left: "12%"
+          }}
+        />
+        
+
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         {/* Section header */}
         <div className="flex items-center justify-between mb-16">
           <div className="h-px bg-border flex-1"></div>

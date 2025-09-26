@@ -3,8 +3,43 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-br from-hero-bg to-background">
-      <div className="max-w-4xl mx-auto text-center space-y-8">
+    <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-br from-hero-bg to-background relative overflow-hidden">
+      {/* Aesthetic blurred containers */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Container 1 */}
+        <div
+          className="absolute w-[473px] h-[408px] rounded-full bg-white blur-[50px] shrink-0"
+          style={{ 
+            transform: "rotate(-0.251deg)",
+            top: "10%",
+            left: "5%"
+          }}
+        />
+        
+        {/* Container 2 */}
+        <div
+          className="absolute w-[320px] h-[280px] rounded-full bg-white blur-[40px] shrink-0"
+          style={{ 
+            transform: "rotate(15.5deg)",
+            top: "20%",
+            right: "8%"
+          }}
+        />
+        
+         
+        {/* Container 6 */}
+        <div
+          className="absolute w-[290px] h-[260px] rounded-full bg-white blur-[38px] shrink-0"
+          style={{ 
+            transform: "rotate(33.1deg)",
+            top: "35%",
+            right: "3%"
+          }}
+        />
+        
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
         {/* Main heading */}
         <div className="space-y-4">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-tight">
@@ -41,24 +76,26 @@ export function HeroSection() {
             size="sm"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
-            View my github!
+              <a href="https://github.com/RielleTatel"> 
+                View my github!
+              </a>
           </Button>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" className="rounded-full">
-              <Github className="h-5 w-5" />
+              <a href="https://github.com/RielleTatel"> <Github className="h-5 w-5" /> </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full">
-              <Instagram className="h-5 w-5" />
+              <a href="https://www.facebook.com/skizVah/"> <Instagram className="h-5 w-5" /> </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full">
-              <Linkedin className="h-5 w-5" />
+            <a href="https://www.linkedin.com/in/gabrielle-tatel-3b337b2b9/"> <Instagram className="h-5 w-5" /> </a>
             </Button>
           </div>
         </div>
       </div>
 
       {/* Brand mark */}
-      <div className="absolute bottom-8 right-8">
+      <div className="absolute bottom-8 right-8 z-10">
         <h3 className="text-2xl font-bold text-accent tracking-wider">
           SRIELLE
         </h3>

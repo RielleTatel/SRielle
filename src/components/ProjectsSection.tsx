@@ -23,8 +23,61 @@ export function ProjectsSection() {
   ];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-20">
-      <div className="max-w-6xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center px-6 py-20 relative overflow-hidden">
+      {/* Aesthetic blurred containers */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Container 1 */}
+        <div
+          className="absolute w-[350px] h-[300px] rounded-full bg-white blur-[40px] shrink-0"
+          style={{ 
+            transform: "rotate(-8.5deg)",
+            top: "5%",
+            left: "2%"
+          }}
+        />
+        
+        {/* Container 3 */}
+        <div
+          className="absolute w-[250px] h-[220px] rounded-full bg-white blur-[32px] shrink-0"
+          style={{ 
+            transform: "rotate(-35.7deg)",
+            bottom: "25%",
+            left: "5%"
+          }}
+        />
+        
+        {/* Container 4 */}
+        <div
+          className="absolute w-[300px] h-[270px] rounded-full bg-white blur-[38px] shrink-0"
+          style={{ 
+            transform: "rotate(41.3deg)",
+            bottom: "8%",
+            right: "7%"
+          }}
+        />
+        
+        {/* Container 5 */}
+        <div
+          className="absolute w-[190px] h-[170px] rounded-full bg-white blur-[28px] shrink-0"
+          style={{ 
+            transform: "rotate(-19.2deg)",
+            top: "40%",
+            right: "1%"
+          }}
+        />
+        
+        {/* Container 6 */}
+        <div
+          className="absolute w-[160px] h-[140px] rounded-full bg-white blur-[22px] shrink-0"
+          style={{ 
+            transform: "rotate(52.8deg)",
+            bottom: "35%",
+            left: "1%"
+          }}
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section header */}
         <div className="flex items-center justify-between mb-12">
           <div className="h-px bg-border flex-1"></div>
@@ -73,12 +126,12 @@ export function ProjectsSection() {
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h5 className="text-3xl font-bold text-accent">Full-Stack Excellence</h5>
               <p className="text-foreground leading-relaxed">
-                I specialize in building scalable, user-centric applications that solve real-world problems. 
-                From concept to deployment, I handle every aspect of the development lifecycle - crafting intuitive 
-                user interfaces, architecting robust backend systems, implementing secure authentication, optimizing 
-                database performance, and deploying to cloud infrastructure. My expertise spans modern web technologies, 
-                mobile development, API design, and DevOps practices, ensuring that every solution is not just functional, 
-                but maintainable, secure, and ready to scale with your business needs.
+
+              I build fullstack applications that are scalable and user-friendly. 
+              I work across the development process — from designing intuitive interfaces to building reliable backends, 
+              setting up secure authentication, and optimizing databases. My experience covers modern web and mobile technologies, with a focus on creating solutions that are functional, maintainable, 
+              and able to grow with business needs.
+
               </p>
             </div>
           </div>
